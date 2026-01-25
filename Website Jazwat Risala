@@ -1,16 +1,10 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>جمعية جذوة الرسالة</title>
-  <meta name="description" content="جمعية جذوة الرسالة - جمعية تربوية ثقافية تطوعية مرخّصة في لبنان" />
-
-  <!-- ✅ IMPORTANT:
-       Upload your logo to GitHub in the SAME folder as index.html
-       and name it exactly:  logo.jpg
-       (or change the src below to match your real filename)
-  -->
+  <meta name="description" content="جمعية جذوة الرسالة - جمعية تربوية ثقافية تطوعية مرخّصة في لبنان">
 
   <style>
     :root{
@@ -20,14 +14,212 @@
       --muted:#b7c3e6;
       --accent:#6ee7ff;
       --border:rgba(255,255,255,.12);
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius:16px;
     }
     *{box-sizing:border-box}
     body{
       margin:0;
       font-family:"Noto Naskh Arabic","Segoe UI",Tahoma,Arial,sans-serif;
-      background: radial-gradient(1200px 600px at 20% -10%, rgba(110,231,255,.18), transparent 60%),
-                  radial-gradient(900px 500px at 110% 10%, rgba(167,243,208,.14), transparent 55%),
-                  var(--bg);
-      c
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.9;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:24px;
+    }
+
+    /* HEADER */
+    .header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      padding:16px 20px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:rgba(15,26,46,.85);
+      margin-bottom:20px;
+    }
+    .logo{
+      width:90px;
+      height:auto;
+      border-radius:12px;
+      background:rgba(255,255,255,.04);
+      padding:6px;
+      border:1px solid var(--border);
+    }
+    .brand{
+      display:flex;
+      flex-direction:column;
+    }
+    .brand h1{
+      margin:0;
+      font-size:22px;
+      font-weight:900;
+    }
+    .brand p{
+      margin:0;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* SECTIONS */
+    .section{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:22px;
+      background:rgba(15,26,46,.7);
+      margin-bottom:20px;
+    }
+    h2{margin-top:0}
+    p,li{color:var(--muted)}
+    ul{padding-right:18px}
+
+    blockquote{
+      border-right:4px solid var(--accent);
+      padding:14px;
+      margin:14px 0;
+      background:rgba(110,231,255,.08);
+      border-radius:12px;
+      color:#fff;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+    @media(max-width:800px){
+      .grid{grid-template-columns:1fr}
+      .header{flex-direction:column;text-align:center}
+    }
+
+    .field{
+      border:1px solid var(--border);
+      padding:10px 12px;
+      border-radius:12px;
+      background:rgba(255,255,255,.04);
+    }
+
+    iframe{
+      width:100%;
+      height:260px;
+      border:0;
+      border-radius:12px;
+    }
+
+    footer{
+      text-align:center;
+      font-size:13px;
+      color:var(--muted);
+      margin-top:20px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- HEADER WITH LOGO -->
+  <div class="header">
+    <img src="logo.jpg" alt="شعار جمعية جذوة الرسالة" class="logo">
+    <div class="brand">
+      <h1>جمعية جذوة الرسالة</h1>
+      <p>جمعية تربوية • ثقافية • تطوعية • تنموية (مرخّصة في لبنان)</p>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>نبذة عن الجمعية</h2>
+    <p>
+      جمعية تربوية ثقافية تطوعية تُسهم في التنمية الاجتماعية، وترتكز على احترام القيم
+      الدينية والوطنية والحضارية، ومرخّصة أصولًا في لبنان.
+    </p>
+
+    <blockquote>
+      <strong>جملة تعريفية بالجمعية:</strong><br>
+      جمعية جذوة الرسالة ومضة تربوية، توقد وعي الأجيال بقيم راسخة،
+      نحو مجتمع متراحم يخدم ويتطوع ويعيد للأسرة والوطن بريقهما في قلب الحياة.
+    </blockquote>
+
+    <p>
+      جذوة الرسالة جمعية أسسها أساتذة وتربويون وحقوقيون، انطلاقًا من إقليم الخروب لأجل
+      كلّ لبنان. تهتم بتحصين المجتمع، ولا سيّما الأجيال الصاعدة، في زمن يُساء فيه استخدام
+      وسائل التواصل، خاصة الذكاء الاصطناعي، بعيدًا عن القيم الحميدة.
+      كما تعتمد العمل التطوعي وسيلة لتهذيب السلوك، وتولي أهمية كبرى للأسرة ودور المرأة.
+    </p>
+  </section>
+
+  <!-- OBJECTIVES -->
+  <section class="section">
+    <h2>الغاية والأهداف</h2>
+    <ul>
+      <li>رفع مستوى التربية والتعليم والوعي الثقافي.</li>
+      <li>دعم الطلاب ذوي صعوبات التعلم وتشجيع البحث العلمي.</li>
+      <li>تنمية روح التطوع وخدمة المجتمع.</li>
+      <li>تعزيز مفهوم الأسرة ودور المرأة.</li>
+      <li>ترسيخ المواطنة الصالحة والانتماء الوطني.</li>
+    </ul>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="section">
+    <h2>البرامج والأنشطة الجارية</h2>
+    <p>
+      أطلقت الجمعية قناة تعليمية مجانية لدعم طلاب المرحلة الثانوية في مادة الرياضيات.
+    </p>
+    <p>
+      👉 <a target="_blank"
+         href="https://youtube.com/playlist?list=PLOF7S0hul0PVo3J8MUl8W2I0l0hpkTp8h&si=iP9rX-LUp9GJy4jA">
+        زيارة قناة تعليم الرياضيات على YouTube
+      </a>
+    </p>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section">
+    <h2>مركز الجمعية – مزبود</h2>
+    <p>مزبود – قضاء الشوف – لبنان</p>
+    <iframe src="https://www.google.com/maps?q=Mazboud%2C%20Chouf%2C%20Lebanon&output=embed"></iframe>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section">
+    <h2>تواصل معنا</h2>
+    <div class="grid">
+      <div class="field">
+        <strong>البريد الإلكتروني:</strong><br>
+        <a href="mailto:hamiehmounir975@gmail.com">hamiehmounir975@gmail.com</a>
+      </div>
+      <div class="field">
+        <strong>الهاتف:</strong><br>
+        <a href="tel:+9617242467">+961 7 242 467</a>
+      </div>
+      <div class="field">
+        <strong>واتساب:</strong><br>
+        <a target="_blank" href="https://wa.me/9613376654">+961 3 376 654</a>
+      </div>
+      <div class="field">
+        <strong>العنوان:</strong><br>
+        مزبود – قضاء الشوف – لبنان
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> جمعية جذوة الرسالة
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
