@@ -1,65 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>جمعية جذوة الرسالة</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>جمعية جذوة الرسالة | Jazwat AlRisala</title>
+  <meta name="description" content="جمعية جذوة الرسالة - جمعية تربوية ثقافية تطوعية مرخّصة في لبنان" />
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f7f7f7;
-      color: #333;
-      line-height: 1.8;
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a2e;
+      --text:#e9eefc;
+      --muted:#b7c3e6;
+      --accent:#6ee7ff;
+      --border:rgba(255,255,255,.12);
+      --radius:16px;
     }
-    header {
-      background: #0f766e;
-      color: white;
-      padding: 20px;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Noto Naskh Arabic","Segoe UI",Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.9;
     }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .container{max-width:1100px;margin:auto;padding:24px}
+
+    /* HEADER */
+    .topbar{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      padding:16px 20px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:rgba(15,26,46,.85);
+      margin-bottom:20px;
     }
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
+    .logo{
+      width:80px;
+      height:auto;
     }
-    .lang-btn {
-      background: white;
-      color: #0f766e;
-      border: none;
-      padding: 6px 10px;
-      cursor: pointer;
-      font-weight: bold;
+    .brand{
+      display:flex;
+      flex-direction:column;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: white;
-      margin-bottom: 20px;
+    .brand .title{
+      font-weight:900;
+      font-size:22px;
     }
-    h1, h2, h3 {
-      color: #0f766e;
+    .brand .subtitle{
+      font-size:13px;
+      color:var(--muted);
     }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
+
+    /* SECTIONS */
+    .section{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:22px;
+      background:rgba(15,26,46,.7);
+      margin-bottom:20px;
+    }
+    h1,h2{margin-top:0}
+    p,li{color:var(--muted)}
+    ul{padding-right:18px}
+
+    blockquote{
+      border-right:4px solid var(--accent);
+      background:rgba(110,231,255,.08);
+      padding:14px;
+      border-radius:12px;
+      margin:14px 0;
+      color:#fff;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+    @media(max-width:800px){
+      .grid{grid-template-columns:1fr}
+      .topbar{flex-direction:column;text-align:center}
+    }
+
+    .field{
+      border:1px solid var(--border);
+      padding:10px;
+      border-radius:10px;
+      background:rgba(255,255,255,.04);
+    }
+
+    iframe{
+      width:100%;
+      height:260px;
+      border:0;
+      border-radius:12px;
+    }
+
+    .footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      margin-top:20px;
     }
   </style>
 </head>
-<body>
 
-<header>
-  <nav>
-    <div>
-      <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-      <a href="#about" data-ar="من نحن" data-en="About Us">من نحن</a>
-index.html
+<body>
+<div class="container">
+
+  <!-- HEADER WITH LOGO -->
+  <div class="topbar">
+    <img src="logo.png" alt="جمعية جذوة الرسالة" class="logo">
+    <div class="brand">
+      <div class="title">جمعية جذوة الرسالة</div>
+      <div class="subtitle">جمعية تربوية • ثقافية • تطوعية • تنموية</div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="section">
+    <h1>جمعية جذوة الرسالة</h1>
+    <p>
+      جمعية تربوية ثقافية تطوعية تُسهم في التنمية الاجتماعية، وترتكز على احترام القيم
+      الدينية والوطنية والحضارية، وهي مرخّصة في لبنان أصولًا.
+    </p>
+
+    <blockquote>
+      <strong>جملة تعريفية بالجمعية:</strong><br>
+      جمعية جذوة الرسالة ومضة تربوية، توقد وعي الأجيال بقيم راسخة،
+      نحو مجتمع متراحم يخدم ويتطوع ويعيد للأسرة والوطن بريقهما في قلب الحياة.
+    </blockquote>
+
+    <p>
+      جذوة الرسالة جمعية أسسها أساتذة وتربويون وحقوقيون، انطلاقًا من إقليم الخروب لأجل
+      كلّ لبنان. تهتم بتحصين المجتمع، وبخاصة الأجيال الصاعدة، في زمن يُساء فيه استخدام
+      وسائل التواصل ولا سيّما الذكاء الاصطناعي. كما تعتمد العمل التطوعي وسيلة لتهذيب
+      السلوك، وتولي أهمية كبرى للأسرة ودور المرأة فيها.
+    </p>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section">
+    <h2>الغاية والأهداف</h2>
+    <ul>
+      <li>رفع مستوى التربية والتعليم والوعي الثقافي.</li>
+      <li>دعم الطلاب ذوي صعوبات التعلم وتشجيع البحث العلمي.</li>
+      <li>تنمية روح العمل التطوعي وخدمة المجتمع.</li>
+      <li>تعزيز مفهوم الأسرة ودور المرأة.</li>
+      <li>ترسيخ المواطنة الصالحة والانتماء الوطني.</li>
+    </ul>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="section">
+    <h2>البرامج والأنشطة الجارية</h2>
+    <p>
+      أطلقت الجمعية قناة تعليمية مجانية لدعم طلاب المرحلة الثانوية في مادة الرياضيات.
+    </p>
+    <p>
+      🔹 <strong>قناة تعليم الرياضيات – المرحلة الثانوية</strong>
+    </p>
+    <p>
+      👉 <a href="https://youtube.com/playlist?list=PLOF7S0hul0PVo3J8MUl8W2I0l0hpkTp8h&si=iP9rX-LUp9GJy4jA"
+           target="_blank">
+        زيارة القناة التعليمية على YouTube
+      </a>
+    </p>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section">
+    <h2>مركز الجمعية – مزبود</h2>
+    <p>مزبود – قضاء الشوف – لبنان</p>
+    <iframe src="https://www.google.com/maps?q=Mazboud%2C%20Chouf%2C%20Lebanon&output=embed"></iframe>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section">
+    <h2>تواصل معنا</h2>
+    <div class="grid">
+      <div class="field">
+        <strong>البريد الإلكتروني:</strong><br>
+        <a href="mailto:hamiehmounir975@gmail.com">hamiehmounir975@gmail.com</a>
+      </div>
+      <div class="field">
+        <strong>الهاتف:</strong><br>
+        +961 7 242 467
+      </div>
+      <div class="field">
+        <strong>واتساب:</strong><br>
+        <a href="https://wa.me/9613376654" target="_blank">+961 3 376 654</a>
+      </div>
+      <div class="field">
+        <strong>العنوان:</strong><br>
+        مزبود – الشوف – لبنان
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    © 2026 جمعية جذوة الرسالة – موقع رسمي
+  </div>
+
+</div>
+</body>
+</html>
