@@ -37,13 +37,27 @@
     .header{
       display:flex;
       align-items:center;
-      gap:16px;
+      gap:18px;
       padding:16px 20px;
       border:1px solid var(--border);
       border-radius:var(--radius);
       background:rgba(15,26,46,.85);
       margin-bottom:20px;
     }
+
+    .logo-wrap{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .logo-title{
+      font-weight:700;
+      font-size:14px;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+
     .logo{
       width:90px;
       height:auto;
@@ -52,6 +66,7 @@
       padding:6px;
       border:1px solid var(--border);
     }
+
     .brand{
       display:flex;
       flex-direction:column;
@@ -96,6 +111,7 @@
     @media(max-width:800px){
       .grid{grid-template-columns:1fr}
       .header{flex-direction:column;text-align:center}
+      .logo-wrap{justify-content:center}
     }
 
     .field{
@@ -124,9 +140,13 @@
 <body>
 <div class="container">
 
-  <!-- HEADER WITH LOGO -->
+  <!-- HEADER WITH LOGO + TITLE -->
   <div class="header">
-    <img src="logo.jpg" alt="شعار جمعية جذوة الرسالة" class="logo">
+    <div class="logo-wrap">
+      <span class="logo-title">Logo:</span>
+      <img src="logo.jpg" alt="شعار جمعية جذوة الرسالة" class="logo">
+    </div>
+
     <div class="brand">
       <h1>جمعية جذوة الرسالة</h1>
       <p>جمعية تربوية • ثقافية • تطوعية • تنموية (مرخّصة في لبنان)</p>
@@ -149,9 +169,7 @@
 
     <p>
       جذوة الرسالة جمعية أسسها أساتذة وتربويون وحقوقيون، انطلاقًا من إقليم الخروب لأجل
-      كلّ لبنان. تهتم بتحصين المجتمع، ولا سيّما الأجيال الصاعدة، في زمن يُساء فيه استخدام
-      وسائل التواصل، خاصة الذكاء الاصطناعي، بعيدًا عن القيم الحميدة.
-      كما تعتمد العمل التطوعي وسيلة لتهذيب السلوك، وتولي أهمية كبرى للأسرة ودور المرأة.
+      كلّ لبنان، وتعتمد العمل التطوعي وسيلة لتهذيب السلوك وتعزيز دور الأسرة والمرأة.
     </p>
   </section>
 
